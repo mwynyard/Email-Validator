@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
+
+body {
+    margin: 0;
+    background-color: #2B2B2B;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+.verifier {
+    border-radius: 11px;
+    background: #2e2e2e;
+    box-shadow:  -8px 8px 16px #272727,
+                 8px -8px 16px #353535;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.status-wrapper {
+    padding: 20px;
+}
+
+form {
+    /* background-color: #5E5E5E; */
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-grow: 1;
+}
+
+button {
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+    border: none;
+    border-radius: 11px;
+    background: linear-gradient(225deg, #272727, #2e2e2e);
+    box-shadow:  -8px 8px 16px #252525,
+             8px -8px 16px #313131;
+    width: 100%;
+    font-weight: 400;
+    font-size: medium;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 11px;
+    background: #2e2e2e;
+    box-shadow: inset -8px 8px 16px #272727,
+                inset 8px -8px 16px #353535;
+                width: 95%;
+}
+
+.output-status {
+    border-radius: 5px;
+background: #2e2e2e;
+box-shadow: inset -5px 5px 10px #272727,
+            inset 5px -5px 10px #353535;
+            padding: 10px;
+}
+
+.mx-wrapper {
+    margin-top: 50px;
+    border-radius: 11px;
+    background: #2e2e2e;
+    box-shadow:  -8px 8px 16px #272727,
+                 8px -8px 16px #353535;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    align-items: center;
+
+
+}
+
+.records {
+border-radius: 5px;
+background: #2e2e2e;
+box-shadow: inset -5px 5px 10px #272727,
+            inset 5px -5px 10px #353535;
+            padding: 10px;
+            width: 80%;
+            text-align: center;
+
+}
+
+.snippet {
+    margin-top: 50px;
+    border-radius: 11px;
+    background: #2e2e2e;
+    box-shadow:  -8px 8px 16px #272727,
+                 8px -8px 16px #353535;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    align-items: center;
+
+
+}
+
+.snip {
+   width: 300px;
+}
+
+.result {
+    display: none;
+}
