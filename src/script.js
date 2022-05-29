@@ -36,14 +36,11 @@ formEl.addEventListener('submit', function(event) {
     })
     .then(function(jsonData) {
     	console.log(jsonData.debounce);
-      document.getElementById('results').innerText =
-      	JSON.stringify(jsonData);
         document.querySelector('#reason').innerText =
       	JSON.stringify(jsonData.debounce.reason).replace(/['"]+/g, '');
         document.querySelector('#result').innerText =
       	JSON.stringify(jsonData.debounce.result).replace(/['"]+/g, '');
     });
-  console.log('form submitted - function')
   
 
   event.preventDefault();
