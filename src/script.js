@@ -5,7 +5,7 @@ const emailVal = emailInput.value
 
 
 var formEl = document.getElementById('form');
-var token = config.MY_API_TOKEN
+var token = "public_clZxRldoTFQ4RVF6aDZZVXJ5UUVkdz09"
 
 formEl.addEventListener('submit', function(event) {
 
