@@ -7,17 +7,6 @@ const showContent = (event) => {
     console.log("FORM SUBMITTED")
 }
 
-// submit.addEventListener('click', showContent)
-
-// const options = {method: 'GET', headers: {Accept: 'application/json'}};
-
-// fetch('https://api.debounce.io/v1/?api=627238f52d347&email=contact%40talentrecruit.com', options)
-//   .then(response => response.json())
-//   .then(response => console.log(response))
-//   .catch(err => console.error(err));
-
-  //API KEY 627238f52d347
-
 let emailInput = document.querySelector('#email-input')
 let emailVal = emailInput.value
 
