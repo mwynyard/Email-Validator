@@ -18,6 +18,10 @@ const showContent = (event) => {
 
   //API KEY 627238f52d347
 
+let emailInput = document.querySelector('#email-input')
+let emailVal = emailInput.value
+
+
 var formEl = document.getElementById('form');
 
 formEl.addEventListener('submit', function(event) {
@@ -27,6 +31,10 @@ formEl.addEventListener('submit', function(event) {
   var headers = new Headers();
   // Tell the server we want JSON back
   headers.set('Accept', 'application/json');
+
+  // Show Results
+  resultContent.style.display = "block";
+  const emailTest = "milan.wynyard%40gmail.com"
 
   // 1.2 Form Data
   // We need to properly format the submitted fields.
@@ -43,7 +51,7 @@ formEl.addEventListener('submit', function(event) {
 
   // 2. Make the request
   // ================================
-  var url = 'https://api.debounce.io/v1/?api=627238f52d347&email=contact%40talentrecruit.com';
+  var url = `https://api.debounce.io/v1/?api=627238f52d347&email=${emailInput.value}`;
   var fetchOptions = {
     method: 'POST', headers,
     body: formData
@@ -60,11 +68,18 @@ formEl.addEventListener('submit', function(event) {
     })
     // 3.2 Do something with the JSON data
     .then(function(jsonData) {
-    	console.log(jsonData);
+    	console.log(jsonData.debounce);
       document.getElementById('results').innerText =
       	JSON.stringify(jsonData);
+        document.querySelector('#reason').innerText =
+      	JSON.stringify(jsonData.debounce.reason).replace(/['"]+/g, '');
+        document.querySelector('#result').innerText =
+      	JSON.stringify(jsonData.debounce.result).replace(/['"]+/g, '');
     });
   console.log('form submitted - function')
+  
 
   event.preventDefault();
 });
+
+//info@urbanedge.com.au

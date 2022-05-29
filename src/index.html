@@ -12,7 +12,7 @@
 <body>
     <h1 class="h1">Email Verifier</h1>
     <form method="GET" action="" id="form">
-        <input type="text" placeholder="Email address" name="email-address">
+        <input id='email-input' type="text" placeholder="Email address" name="email-address">
         <button class="submit-button" type="submit">Submit</button>
     </form>
     <div class="result">
@@ -20,11 +20,11 @@
             <div class="status-wrapper">
                 <h3 class="status">Status</h3>
 
-                <p class="output-status">DoNotMail</p>
+                <p id='reason' class="output-status">-</p>
             </div>
             <div class="status-wrapper">
                 <h3 class="status">Sub-Status</h3>
-                <p class="output-status">Role-Based</p>
+                <p id='result' class="output-status">-</p>
             </div>
         </div>
         <div class="mx-wrapper">

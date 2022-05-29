@@ -64,6 +64,7 @@ input {
     box-shadow: inset -8px 8px 16px #272727,
                 inset 8px -8px 16px #353535;
                 width: 95%;
+    color: white
 }
 
 .output-status {
